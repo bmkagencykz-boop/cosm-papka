@@ -184,6 +184,16 @@ footer{border-top:1.5px solid var(--line);padding:30px 0;font-size:14px;color:va
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .mbuy{display:none}
 
+/* hub */
+.hubsec{padding:0 0 100px}
+.hubcta{display:block;text-decoration:none;color:#fff;background:linear-gradient(135deg,#FF6FA6 0%,var(--pink) 55%,var(--pink2));border-radius:34px;padding:36px 34px 34px;position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(255,46,126,.3)}
+.hubcta::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.35),transparent 65%)}
+.hubcta .hk{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:rgba(255,255,255,.2);border-radius:999px;padding:7px 14px}
+.hubcta b{display:block;font-size:clamp(24px,3.2vw,36px);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin:16px 0 12px;max-width:720px;position:relative;z-index:1}
+.hubcta .hs{display:block;font-size:17px;opacity:.9;max-width:640px;position:relative;z-index:1}
+.hubcta .hb{display:inline-flex;margin-top:22px;background:#fff;color:var(--pink2);font-weight:900;font-size:16px;border-radius:999px;padding:15px 26px;position:relative;z-index:1}
+@media (max-width:600px){.hubsec{padding-bottom:70px}.hubcta{padding:26px 22px}}
+
 /* viewer */
 .lb{position:fixed;inset:0;background:rgba(22,17,26,.88);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
 .lb.on{display:flex}
@@ -232,7 +242,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="timer"><span class="full">Акция: 7 000 ₽ вместо 22 000 ₽ до конца</span><span class="short">Акция −68% · осталось</span><div class="t" data-timer><b>00</b>д<b>00</b>:<b>00</b>:<b>00</b></div></div>
   <header class="nav"><div class="wrap">
     <a class="logo" href="#top">SMILE SALES <span>AGENCY</span></a>
-    <nav><a href="#inside">Что внутри</a><a href="#how">Как работает</a><a href="#author">Автор</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+    <nav><a href="#inside">Что внутри</a><a href="https://t.me/Smilesalesbot/hub?startapp=cosm" target="_blank" rel="noopener">Бесплатно</a><a href="#how">Как работает</a><a href="#author">Автор</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
     <a class="btn" href="https://t.me/smilesalesbot?start=cosmo" target="_blank" rel="noopener">Купить · 7 000 ₽</a>
   </div></header>
 </div>
@@ -249,7 +259,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div><div class="now">≈ 38 500 ₸<small>в тенге по курсу</small></div></div>
         <div><s>22 000 ₽</s> <span class="off">−68%</span></div>
       </div>
-      <p style="margin-top:14px;font-size:14px;color:var(--soft);font-weight:600">Доступ сразу после оплаты · <a href="#inside" style="color:var(--pink);font-weight:800;text-decoration:none">что внутри ↓</a></p>
+      <p style="margin-top:14px;font-size:14px;color:var(--soft);font-weight:600">Доступ сразу после оплаты · <a href="#inside" style="color:var(--pink);font-weight:800;text-decoration:none">что внутри ↓</a> · <a href="https://t.me/Smilesalesbot/hub?startapp=cosm" target="_blank" rel="noopener" style="color:var(--pink);font-weight:800;text-decoration:none">🎁 бесплатные таблицы в Telegram ›</a></p>
     </div>
     <div class="photo reveal">
       <div class="blob"></div>
@@ -344,6 +354,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
+<section class="hubsec" id="hub">
+  <div class="wrap">
+    <a class="hubcta reveal" href="https://t.me/Smilesalesbot/hub?startapp=cosm" target="_blank" rel="noopener">
+      <span class="hk">🎁 Бесплатно в Telegram</span>
+      <b>Smile Sales Hub: уроки, чек-лист аудита и РНП для косметологии</b>
+      <span class="hs">Чек-лист аудита отдела продаж на 318 пунктов, шаблон РНП на 8 недель, видеоуроки и калькулятор потерь. Откроется прямо в Telegram.</span>
+      <span class="hb">Открыть хаб ›</span>
+    </a>
+  </div>
+</section>
+
 <section class="author" id="author">
   <div class="wrap">
     <div class="ap reveal"><div class="blob"></div><img src="img/author.webp" alt="Дмитрий Крюков"></div>
@@ -407,7 +428,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
-<footer><div class="wrap"><span>Smile Sales Agency · Дмитрий Крюков</span><span>Telegram <a href="https://t.me/thedmkr" target="_blank" rel="noopener">@thedmkr</a></span></div></footer>
+<footer><div class="wrap"><span>Smile Sales Agency · Дмитрий Крюков</span><span><a href="https://t.me/Smilesalesbot/hub" target="_blank" rel="noopener">Smile Sales Hub</a> · Telegram <a href="https://t.me/thedmkr" target="_blank" rel="noopener">@thedmkr</a></span></div></footer>
 <a class="btn mbuy" href="https://t.me/smilesalesbot?start=cosmo" target="_blank" rel="noopener">Купить за 7 000 ₽ <s style="opacity:.7;font-weight:600">22 000 ₽</s></a>
 
 <div class="lb" id="lb"><img alt=""><button class="x" aria-label="Закрыть">×</button><button class="pv" aria-label="Назад">‹</button><button class="nx" aria-label="Вперёд">›</button><div class="cnt"></div></div>
